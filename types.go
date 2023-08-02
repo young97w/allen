@@ -20,5 +20,5 @@ type Query struct {
 }
 
 type QuerierBuilder interface {
-	Builder() (*Query, error)
+	Build() (*Query, error)
 }

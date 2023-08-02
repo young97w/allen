@@ -81,7 +81,7 @@ func (r *Registry) ParseModel(obj any) (*Model, error) {
 	}
 
 	return &Model{
-		TableName: typ.Name(),
+		TableName: underScoreName(typ.Name()),
 		Fields:    fields,
 		Columns:   columns,
 	}, nil
